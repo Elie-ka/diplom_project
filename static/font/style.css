@@ -1,0 +1,285 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+/*general*/
+h3{
+    margin: 10px 0;
+}
+p{
+    text-align: justify;
+}
+/*navbar*/
+#navt{
+    background-color: #2a0258!important;
+    height: 10vh;
+}
+.mtuci{
+    font-size: 30px ;
+}
+.nav-item .mtuci  :hover{
+    color: white !important;
+}
+.collapse a:hover{
+    color: #445760!important;
+}
+#navd{
+    background-color: #ffffff !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    height: 15vh;
+}
+.logo{
+    height: 70px;
+}
+.second{
+   font-size: 20px !important;
+}
+
+/*homePage*/
+.mainHom{
+    padding-top: 45px;
+    min-height: 640px;
+    width: 100%;
+    color: white;
+    background-color: #5845A7;
+    background-image: url("{{ url_for('static', filename='images/home_bg.png' ) }}") !important;/*image ne fonctionne pas sais pas pourquoi*/
+    background-size: 1735px 1104px;
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
+    margin-bottom: 77px;
+}
+.mainHom h1{
+    color: white;
+    font-size: 65px;
+    font-family: 'Merriweather', serif;
+}
+.mainHom li{
+    list-style: square;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.mainHom .number{
+    color: #00EEFF;
+    font-family: 'Poppins', sans-serif;/*font-family: 'Roboto', sans-serif;*/
+    font-size: 50px;
+    font-weight: 700;
+}
+.mainHom .title{
+    color: #fff !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.mainHom .description{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+        /*carousel*/
+.mainCar{
+    margin-bottom: 35px;
+}
+  
+/*addressPage*/
+.mainAbou 
+
+/*addressPage*/
+.mainAdr {
+    text-align: center !important;
+    border-top: 1px solid #000;
+    padding-top: 15px;
+}
+.mainAdr .row{
+    margin-bottom: 25px;
+}
+
+  /*footer*/
+  .footer{
+    background-color: #2a0258;
+    padding: 15px 0;
+    text-align: center;
+}
+.footer p{
+    padding-top: 5px;
+    color: #fff;
+    text-align: center;
+}
+.footer li{
+    display: inline-block;
+    width: 450px;
+}
+.footer li a{
+    color: #fff;
+    font-size: 10px;
+}
+
+/*actionPage*/
+.mainAct .main_Act{
+    width: 100%;
+    height: 40px;
+    background-color: #fff; /*#fff*/
+    z-index: 1000;
+}
+.main_Act .btn-nav{
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    background-size: 100%;
+    float: right;
+    margin-right: 1px;
+}
+.main_Act .bntAc{
+    width: 50px;
+    height: 100%;
+    background-size: 100%;
+   
+    background-size: center;
+}
+.main_Act .bntAc:hover{
+    opacity: 0.5;
+}
+/*aside*/
+.nav-sidebar{
+    min-height: 90vh;
+    position: relative;
+    /*width: 25%;*/
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    
+    visibility: hidden; /*javascript*/
+}
+
+.nav-sidebar .image-container{
+    padding: 10px ;
+}
+.nav-sidebar .image-container .image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-sidebar .image-container .image img{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+.nav-sidebar .image-container h5{
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: center;
+    font-size: 40px;
+}
+.nav-sidebar .image-container p{
+    color: #324042;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+.nav-sidebar .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;/*modifier*/
+    height: 30px;/*modifier* ajouter aussi h5*/
+    border-radius: 20px;
+    background: rgb(202 253 255 /50%);
+}
+.nav-sidebar .input .talk{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mainAct .input .talk i{
+    font-size: 20px;
+    color: #aed0d0;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.left_part{
+    background: #fff;
+    float: left;
+    text-align: center;
+    min-height: 90vh;
+    visibility: visible !important;
+    clear: both;
+}
+/* xa viendra apres 
+.mainAct {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainAct .image-container{
+    padding: 10px ;
+}
+
+.mainAct .image-container .image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainAct .image-container .image img{
+    width: 100px;
+    align-items: center;
+}
+
+.mainAct .image-container h1{
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: center;
+    font-size: 40px;
+}
+.mainAct .image-container p{
+    color: #324042;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.mainAct .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: rgb(202 253 255 /50%);
+}
+
+.mainAct .input .talk{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.mainAct .input .talk i{
+    font-size: 20px;
+    color: #aed0d0;
+    font-size: 15px;
+    margin-right: 20px;
+}*/

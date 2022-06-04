@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{%block title%}Home Page{%endblock%}
+{%block content%}
+<div class="mainAdr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <p>Aviamotornaya Street, 8А</p>
+                <p>Moscow, Russia, 111024</p>
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='images/aviamortonya1.png' ) }}">
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1881906896774!2d37.71005731539122!3d55.75523299927276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aa622ab27b1%3A0x6fc1fc1a0a30121!2sAviamotornaya%20St%2C%208A%2C%20Moskva%2C%20111024!5e0!3m2!1sen!2sru!4v1648722897384!5m2!1sen!2sru" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-4">
+                <p>Ulitsa Narodnogo Opolcheniya, 32</p>
+                <p>Moscow, Russia, 123423</p>
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='images/narodnavaga1.png' ) }}">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5148176680964!2d37.48024171539255!3d55.784297997030684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549018410fa9b%3A0x6b18f0408eced286!2sUlitsa%20Narodnogo%20Opolcheniya%2C%2032%2C%20Moskva%2C%20123423!5e0!3m2!1sen!2sru!4v1648722540389!5m2!1sen!2sru" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+      </div>
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+        <ul>
+            <li><a href="https://www.minobrnauki.gov.ru/" target="_blank"><img src="{{ url_for('static', filename='images/logo2.png' ) }}">
+                Министерство науки и высшего
+                образования Российской Федерации
+            </a></li>
+            <li><a href="https://digital.gov.ru/ru/" target="_blank"><img src="{{ url_for('static', filename='images/logo1.png' ) }}" >
+                МТУСИ является подведомственным
+                вузом Федерального Агентства Связи
+            </a></li>
+        </ul>
+        <p>&copy; Copyright ElieMbKayembe 2022</p>
+    </div>
+</section>
+ <!--/footer-->
+
+{%endblock%}
+<!---->
